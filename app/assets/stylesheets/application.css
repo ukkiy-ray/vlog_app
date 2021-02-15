@@ -13,3 +13,88 @@
  *= require_tree .
  *= require_self
  */
+ * {
+  box-sizing: border-box;
+}
+
+html, body{
+  overflow: hidden;
+}
+
+header {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 60px;
+  width: 100%;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: 'Anton', sans-serif;
+  background-color: rgba(51,51,51,0.8);
+  border: none;
+}
+
+.header-left {
+  text-decoration: none;
+  display: inline-block;
+  font-size: 25px;
+  color: aliceblue;
+  letter-spacing: 2px;
+}
+
+.header-right {
+  letter-spacing: 1px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.header-list {
+  margin-right: 18px;
+}
+
+.about {
+  display: inline-block;
+  text-decoration: none;
+  color: aliceblue;
+}
+
+.sign {
+  display: inline-block;
+  text-decoration: none;
+  color: aliceblue;
+}
+
+.main {
+  height: 100vh;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.main-wrapper {
+  position: absolute;
+  top: 40%;
+  right: 12%;
+}
+
+.main-title {
+  font-family: 'Anton', sans-serif;
+  color: aliceblue;
+  font-size: 70px;
+  letter-spacing: 3px;
+}
+
+.start {
+  background-color: rgba(55, 127, 26,0.8);
+  display: inline-block;
+  margin-top: 30px;
+  text-decoration: none;
+  font-size: 20px;
+  border-radius: 16px;
+  padding: 2px 5px;
+  color: aliceblue;
+  letter-spacing: 2px;
+}
