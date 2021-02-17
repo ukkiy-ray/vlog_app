@@ -12,6 +12,18 @@
   </head>
 
   <body>
+    <header>
+      <%= link_to 'VLog app', root_path, class: "header-left" %>
+      
+      <ul class="header-right">
+        <% if user_signed_in? %>
+        <% else %>
+          <li class="header-list"><%= link_to 'about', root_path, class: "about" %></li>
+          <li class="header-list"><%= link_to 'sign up', new_user_registration_path, class: "sign" %></li>
+          <li class="header-list"><%= link_to 'sign in', new_user_session_path, class: "sign"%></li>
+        <% end %>
+      </ul>
+    </header>
     <%= yield %>
   </body>
 </html>

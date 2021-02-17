@@ -98,3 +98,78 @@ header {
   color: aliceblue;
   letter-spacing: 2px;
 }
+
+/* user form */
+.users_form {
+  width: auto;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #eeeeee;
+}
+
+.form-wrapper {
+  width: 50%;
+  height: 50%;
+  box-shadow: 0 10px 25px 0 rgba(0, 0, 0, .5);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+}
+
+.users-form-title {
+  height: 100%;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form-title {
+  font-size: 40px;
+  border-bottom: 2px solid yellow;
+  font-family: 'Anton', sans-serif;
+}
+
+.user-input-wrapper {
+  width: 50%;
+  height: 100%;
+  padding: 30px 0;
+}
+
+.field {
+  margin-bottom: 10px;
+}
+
+.label-title {
+  font-size: 18px;
+  font-style: oblique;
+}
+
+.user-input-field {
+  padding: 0 4px;
+  outline: 0;
+}
+
+.user-links {
+  width: auto;
+  margin-top: 20px;
+  display: flex;
+}
+
+.link-to-session {
+  margin-left: 8%;
+  text-decoration: none;
+  color: #0000aa;
+  font-style: oblique;
+}
+
+.error-messages-container {
+  width: auto;
+  font-size: 14px;
+  position: absolute;
+  top: 80px;
+  color: red;
+}
