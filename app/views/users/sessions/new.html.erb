@@ -1,26 +1,33 @@
-<h2>Log in</h2>
-
-<%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
-  <div class="field">
-    <%= f.label :email %><br />
-    <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
-  </div>
-
-  <div class="field">
-    <%= f.label :password %><br />
-    <%= f.password_field :password, autocomplete: "current-password" %>
-  </div>
-
-  <% if devise_mapping.rememberable? %>
-    <div class="field">
-      <%= f.check_box :remember_me %>
-      <%= f.label :remember_me %>
+<div class="users_form">
+  <div class="form-wrapper">
+    <div class="users-form-title">
+      <h2 class="form-title">Sign in</h2>
     </div>
-  <% end %>
+    <div class="session">
+      <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+        <div class="field">
+          <%= f.label :email, class: "label-title" %><br />
+          <%= f.email_field :email, autofocus: true, autocomplete: "email", class: 'user-input-field' %>
+        </div>
 
-  <div class="actions">
-    <%= f.submit "Log in" %>
+        <div class="field">
+          <%= f.label :password, class: "label-title" %><br />
+          <%= f.password_field :password, autocomplete: "current-password", class: 'user-input-field' %>
+        </div>
+
+        <div class="user-links">
+          <div class="actions">
+            <%= f.submit "Log in" %>
+          </div>
+          <%= link_to 'or Sign up', new_user_registration_path, class: "link-to-session" %>
+        </div>
+
+      <% end %>
+    </div>
   </div>
-<% end %>
+</div>
+<div class="error-messages-container">
+  <%= render "users/shared/error_messages", resource: resource %>
+</div>
 
-<%= render "users/shared/links" %>
+<%#= render "users/shared/links" %>

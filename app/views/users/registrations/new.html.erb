@@ -6,7 +6,6 @@
     <div class="user-input-wrapper">
       <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
         
-
         <div class="field">
           <%= f.label "Nick name", class: "label-title" %><br />
           <%= f.text_field :nickname, autofocus: true, class: 'user-input-field' %>
@@ -37,7 +36,7 @@
           <%= link_to 'or Sign in?', new_user_session_path, class: "link-to-session" %>
         </div>
       <% end %>
-    <div class="user-input-wrapper">
+    </div>
   </div>
 </div>
 <div class="error-messages-container">
