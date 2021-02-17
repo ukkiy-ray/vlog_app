@@ -17,6 +17,7 @@
       
       <ul class="header-right">
         <% if user_signed_in? %>
+          <li class="header-list"><%= link_to 'sign out', destroy_user_session_path, method: :delete, class: "sign"%></li>
         <% else %>
           <li class="header-list"><%= link_to 'about', root_path, class: "about" %></li>
           <li class="header-list"><%= link_to 'sign up', new_user_registration_path, class: "sign" %></li>
