@@ -1,0 +1,7 @@
+<div class="main-container">
+  <%= link_to 'New Post', new_post_path, class: "link_to_new" %>
+  <% @posts.each do |post| %>
+    <%= link_to "#{post.title}", post_path(post.id), class: "link-to-show" %>
+    <%= post.user.nickname %>
+  <% end %>
+</div>

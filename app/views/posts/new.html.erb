@@ -1,0 +1,9 @@
+<div class="post-form-wrapper">
+  <%= form_with model: @post, local: true do |f| %>
+    <p>title</p><%= f.text_field :title %> <br>
+    <p>video</p><%= f.file_field :video %> <br>
+    <div class="submit-post">
+      <%= f.submit "投稿する", class: "submit-btn" %>
+    </div>
+  <% end %>
+</div>

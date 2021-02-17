@@ -180,3 +180,22 @@ header {
   color: red;
 }
 
+/*投稿一覧ページ*/
+.main-container {
+  width: auto;
+  height: 100vh;
+  padding: 80px 0;
+}
+
+.link_to_new {
+  text-decoration: none;
+  color: #333333;
+  font-size: 30px;
+}
+
+/*新規投稿ページ*/
+.post-form-wrapper {
+  width: auto;
+  height: 100vh;
+  padding: 100px 20px;
+}
