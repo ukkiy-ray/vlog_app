@@ -227,4 +227,38 @@ header {
   width: 100%;
   outline: 0;
   box-shadow: 0 10px 25px 0 rgba(0, 0, 0, .5);
+  border: none;
+}
+
+.index-wrapper {
+  width: auto;
+  height: 90vh;
+  display: flex;
+  justify-content: space-around;
+}
+
+.upper-contents {
+  width: 100%;
+  padding: 0 10px 5px 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.link-to-show {
+  text-decoration: none;
+  color: #333333;
+  font-size: 24px;
+  font-family: serif;
+}
+
+.user-nickname {
+  text-decoration: none;
+  color: #555555;
+  font-family: serif;
+}
+
+.posts-index {
+  width: 30%;
+  margin: 15px;
 }

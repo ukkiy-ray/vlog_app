@@ -1,7 +1,15 @@
 <div class="main-container">
   <%= link_to 'New Post', new_post_path, class: "link_to_new" %>
-  <% @posts.each do |post| %>
-    <%= link_to "#{post.title}", post_path(post.id), class: "link-to-show" %>
-    <%= post.user.nickname %>
-  <% end %>
+  <div class="index-wrapper">
+    <% @posts.each do |post| %>
+      <div class="posts-index">
+        <div class="upper-contents">
+          <%= link_to "#{post.title}", post_path(post.id), class: "link-to-show" %>
+          <p class="user-nickname">by <%= post.user.nickname %></p>
+        </div>
+        <video src="<%= rails_blob_path(post.video) %>" type="video/mp4" controls preload="metadata" playsinline class="post-video">
+        
+      </div>
+    <% end %>
+  </div>
 </div>
