@@ -199,3 +199,32 @@ header {
   height: 100vh;
   padding: 100px 20px;
 }
+
+.contents {
+  width: auto;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.post-contents-wrapper {
+  border: none;
+  text-align: center;
+  padding-top: 15px;
+  height: 80%;
+  width: 60%;
+}
+
+.post-title {
+  font-size: 28px;
+  font-family: serif;
+  color: #333333;
+  margin-bottom: 15px;
+}
+
+.post-video {
+  width: 100%;
+  outline: 0;
+  box-shadow: 0 10px 25px 0 rgba(0, 0, 0, .5);
+}

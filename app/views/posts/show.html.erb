@@ -1,6 +1,9 @@
-<div class="post-form-wrapper">
-  <% if @post.video.attached? %>
-    <p><%= @post.title %></p> <br>
-    <video src="<%= rails_blob_path(@post.video) %>" type="video/mp4" controls height="300px" width="500px"></video>
-  <% end %>
+<div class="contents">
+  <div class="post-contents-wrapper">
+    <% if @post.video.attached? %>
+      <div class="post-title"><%= @post.title %></div>
+      <video src="<%= rails_blob_path(@post.video) %>" type="video/mp4" controls preload="metadata" playsinline class="post-video">
+      </video>
+    <% end %>
+  </div>
 </div>
