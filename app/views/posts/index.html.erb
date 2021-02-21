@@ -1,5 +1,12 @@
 <div class="main-container">
-  <%= link_to 'New Post', new_post_path, class: "link_to_new" %>
+  <div class="index-upper-contents">
+    <div class="index-title">
+      ALL POSTS
+    </div>
+    <%= link_to(new_post_path, class: "link_to_new") do %>
+      <i class="far fa-plus-square"></i>
+    <% end %>
+  </div>
   <div class="index-wrapper">
     <% @posts.each do |post| %>
       <div class="posts-index">
