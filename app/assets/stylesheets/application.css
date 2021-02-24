@@ -17,10 +17,6 @@
   box-sizing: border-box;
 }
 
-html, body{
-  overflow: hidden;
-}
-
 header {
   position: absolute;
   top: 0px;
@@ -196,6 +192,14 @@ header {
   align-items: baseline;
 }
 
+.index-wrapper {
+  width: auto;
+  height: 90vh;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap-reverse;
+}
+
 .index-title {
   color: #333333;
   font-size: 30px;
@@ -245,13 +249,6 @@ header {
   outline: 0;
   box-shadow: 0 10px 25px 0 rgba(0, 0, 0, .5);
   border: none;
-}
-
-.index-wrapper {
-  width: auto;
-  height: 90vh;
-  display: flex;
-  justify-content: space-around;
 }
 
 .upper-contents {
