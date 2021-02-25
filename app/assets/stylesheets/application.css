@@ -227,7 +227,7 @@ header {
 .form-container {
   text-align: center;
   width: 50%;
-  height: 500px;
+  height: 80%;
   padding-top: 100px;
   background-color: white;
   box-shadow: 0 10px 25px 0 rgba(0, 0, 0, .5);
@@ -268,8 +268,13 @@ header {
   cursor: pointer;
 }
 
+.review-video video {
+  width: 300px;
+  margin-top: 15px;
+}
+
 .submit-post {
-  margin-top: 60px;
+  margin-top: 40px;
 }
 
 .submit-btn {
