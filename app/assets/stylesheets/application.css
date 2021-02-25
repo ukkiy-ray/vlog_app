@@ -285,6 +285,8 @@ header {
   cursor: pointer;
 }
 
+
+/*投稿詳細ページ*/
 .contents {
   width: auto;
   height: 100vh;
@@ -339,4 +341,13 @@ header {
 .posts-index {
   width: 30%;
   margin: 15px;
+}
+
+.post-destroy {
+  margin-top: 40px;
+  display: inline-block;
+  text-decoration: none;
+  color: #222;
+  font-size: 20px;
+  font-family: serif;
 }

@@ -9,13 +9,9 @@ class PostsController < ApplicationController
 
   def create
     @post = Post.new(post_params)
-    if @post.video.content_type == "video/mp4"
-      if @post.valid?
-        @post.save
-        redirect_to posts_path
-      else
-        render :new
-      end
+    if @post.video.content_type == "video/mp4" && @post.valid?
+      @post.save
+      redirect_to posts_path
     else
       render :new
     end
