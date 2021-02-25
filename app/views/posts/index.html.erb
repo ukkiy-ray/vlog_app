@@ -14,8 +14,9 @@
           <%= link_to "#{post.title}", post_path(post.id), class: "link-to-show" %>
           <p class="user-nickname">by <%= post.user.nickname %></p>
         </div>
-        <video src="<%= rails_blob_path(post.video) %>" type="video/mp4" controls preload="metadata" playsinline class="post-video">
-        
+        <% if post.video.content_type == "video/mp4" %>
+          <video src="<%= rails_blob_path(post.video) %>" type="video/mp4" controls preload="metadata" playsinline class="post-video">
+        <% end %>
       </div>
     <% end %>
   </div>

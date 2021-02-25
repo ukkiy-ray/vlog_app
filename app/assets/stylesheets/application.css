@@ -252,6 +252,16 @@ header {
   font-family: 'Anton', sans-serif;
 }
 
+.file-text {
+  font-size: 12px;
+  background-color: red;
+  color: white;
+  font-family: monospace;
+  border: none;
+  padding: 2px 4px;
+  margin-left: 15px;
+}
+
 .video-file {
   margin-top: 5px;
   outline: none;

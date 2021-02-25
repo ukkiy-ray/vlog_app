@@ -1,8 +1,9 @@
 <div class="post-form-wrapper">
   <div class="form-container">
     <%= form_with model: @post, local: true do |f| %>
-      <p class="post-title-form">title</p><%= f.text_field :title, class: "title-input" %> <br>
-      <p class="form-video">video</p><%= f.file_field :video, class: "video-file" %> <br>
+      <p class="post-title-form">title</p><%= f.text_field :title, class: "title-input", placeholder:"例： 朝ごはん（20文字まで）", maxlength:"20" %> <br>
+      <p class="form-video">video<span class="file-text">mp4ファイルのみ</span></p>
+      <%= f.file_field :video, class: "video-file" %> <br>
       <div class="submit-post">
         <%= f.submit "Submit", class: "submit-btn" %>
       </div>
