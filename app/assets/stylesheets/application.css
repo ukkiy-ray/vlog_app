@@ -211,14 +211,68 @@ header {
 .link_to_new {
   text-decoration: none;
   color: #ff6600;
-  font-size: 20px;
+  font-size: 16px;
 }
 
 /*新規投稿ページ*/
 .post-form-wrapper {
   width: auto;
   height: 100vh;
-  padding: 100px 20px;
+  background-color: #eeeeee;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-container {
+  text-align: center;
+  width: 50%;
+  height: 500px;
+  padding-top: 100px;
+  background-color: white;
+  box-shadow: 0 10px 25px 0 rgba(0, 0, 0, .5);
+}
+
+.post-title-form {
+  font-size: 24px;
+  font-family: 'Anton', sans-serif;
+}
+
+.title-input {
+  font-family: serif;
+  width: 70%;
+  margin-top: 5px;
+  outline: none;
+  padding: 4px;
+}
+
+.form-video {
+  margin-top: 50px;
+  font-size: 24px;
+  font-family: 'Anton', sans-serif;
+}
+
+.video-file {
+  margin-top: 5px;
+  outline: none;
+  cursor: pointer;
+}
+
+.submit-post {
+  margin-top: 60px;
+}
+
+.submit-btn {
+  display: inline-block;
+  width: 30%;
+  padding: 5px;
+  border-radius: 24px;
+  background-color: rgba(55, 127, 26,0.8);
+  font-family: 'Anton', sans-serif;
+  color: white;
+  border: none;
+  outline: none;
+  cursor: pointer;
 }
 
 .contents {
