@@ -194,7 +194,6 @@ header {
 
 .index-wrapper {
   width: auto;
-  height: 90vh;
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap-reverse;
