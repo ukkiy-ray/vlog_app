@@ -347,11 +347,32 @@ header {
   margin: 15px;
 }
 
-.post-destroy {
+.bottom-contents {
   margin-top: 40px;
+  width: auto;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.post-destroy {
   display: inline-block;
   text-decoration: none;
   color: #222;
   font-size: 20px;
   font-family: serif;
+  margin-right: 20px;
+}
+
+.link-to-root {
+  display: inline-block;
+  text-decoration: none;
+  color: #222;
+  font-size: 20px;
+  font-family: serif;
+}
+
+.link-to-root:hover {
+  color: blue;
 }
