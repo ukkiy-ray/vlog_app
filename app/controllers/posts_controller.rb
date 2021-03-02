@@ -1,4 +1,8 @@
 class PostsController < ApplicationController
+  before_action :move_to_index, only: [:edit]
+  before_action :set_post, only: [:show, :edit, :destroy]
+  before_action :authenticate_user!, except: [:index, :show]
+
   def index
     @posts = Post.all
   end
@@ -18,11 +22,9 @@ class PostsController < ApplicationController
   end
 
   def show
-    @post = Post.find(params[:id])
   end
 
   def destroy
-    @post = Post.find(params[:id])
     if user_signed_in? && current_user.id == @post.user_id
       @post.destroy
     end
@@ -30,7 +32,6 @@ class PostsController < ApplicationController
   end
 
   def edit
-    @post = Post.find(params[:id])
   end
 
   def update
@@ -45,5 +46,16 @@ class PostsController < ApplicationController
   private
   def post_params
     params.require(:post).permit(:title, :video).merge(user_id: current_user.id)
+  end
+
+  def set_post
+    @post = Post.find(params[:id])
+  end
+
+  def move_to_index
+    @post = Post.find(params[:id])
+    unless user_signed_in? && current_user.id == @post.user_id
+      redirect_to action: :index
+    end
   end
 end
