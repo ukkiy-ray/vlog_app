@@ -311,7 +311,14 @@ header {
   font-size: 28px;
   font-family: serif;
   color: #333333;
-  margin-bottom: 15px;
+  margin-bottom: 6px;
+}
+
+.show-nickname {
+  text-decoration: none;
+  color: #555555;
+  font-family: serif;
+  margin-bottom: 10px;
 }
 
 .post-video {
@@ -357,6 +364,15 @@ header {
 }
 
 .post-destroy {
+  display: inline-block;
+  text-decoration: none;
+  color: #222;
+  font-size: 20px;
+  font-family: serif;
+  margin-right: 20px;
+}
+
+.post-edit {
   display: inline-block;
   text-decoration: none;
   color: #222;
